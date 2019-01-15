@@ -1,0 +1,106 @@
+h1{
+	font-size: $large-h;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 4px;
+}
+
+h2{
+	font-size: $normal-h;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 4px;	
+}
+
+
+.btn-primary{
+	background-color: $green;
+	border:none;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 15px;
+	padding: 15px 35px;
+	transition: all 0.2s ease-in;
+	&:focus{
+		background-color: $green;
+		box-shadow: none ;
+	}
+	&:active{
+		background-color: $green-hover !important;
+		box-shadow: none !important;
+	}
+	&:hover{
+		background-color: $green-hover;
+		font-size: 16px;
+	}
+}
+
+.long{
+	width: 270px;
+	text-align: left;
+	position: relative;
+	border-radius: 2px;
+	&:after{
+		content: '';
+		display: block;
+		width: 52px;
+		height: 52px;
+		background-color: #16a085;
+		position: absolute;
+		right: 0;
+		top: 0;
+		border-radius: 4px;
+	}
+	.fab{
+		font-size: 28px;
+		display: block;
+		position: absolute;
+		right: 15px;
+		z-index: 10;
+		bottom: 15px;
+	}
+}
+.mail{
+	position: relative;
+	display: block;
+	width: 300px;
+	input{
+		padding: 10px 50px 10px 10px;
+		font-size: $normal-h;
+		border-radius: 4px;
+		font-weight: 400;
+		letter-spacing: 1px;
+		width: 100%;
+		border: none;
+		text-transform: uppercase;
+	}
+	.right-part{
+		position: absolute;
+		cursor: pointer;
+		right: 0;
+		bottom: 0;
+		color: #fff;
+		background-color: #16a085;
+		display: block;
+		height: 50px;
+		width: 50px;
+		border-radius: 3px;
+		text-align: center;
+		transition: all 0.2s ease-in;
+		span{
+			position: relative;
+			top: 15px;
+			font-size: 22px;
+		}
+		&:hover{
+			background-color: $green-hover;
+			color: $dark;
+		}
+	}
+
+}
+
+.container{
+  position: relative;
+  height: 100%;
+}
